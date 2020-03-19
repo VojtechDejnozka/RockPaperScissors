@@ -1,10 +1,10 @@
-﻿using System;
+﻿using RockPaperScissors.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using RockPaperScissors.Model;
 
-namespace RockPaperScissors.Service
+namespace P2RockPaperScissors.Service
 {
     public class RpsLogic
     {
@@ -13,30 +13,36 @@ namespace RockPaperScissors.Service
         public RpsLogic(Random random)
         {
             this.random = random;
+            UserData = new Rps();
         }
 
-        public Rps userData { get; set; }
-        
-        public void GameRound(RpsMode userChoice)
-        {           
-            RpsMode aiChoice = (RpsMode)random.Next(1, 4);
+        public Rps UserData { get; set; }
 
+        public void GameRound(RpsMode userChoice)
+        {
+            if (userChoice == RpsMode.None) return;
+
+            RpsMode aiChoice = (RpsMode)random.Next(1, 4);
+            UserData.AiChoice = aiChoice;
+            UserData.UserChoice = userChoice;
 
             if (aiChoice == RpsMode.Rock && userChoice == RpsMode.Paper ||
                 aiChoice == RpsMode.Paper && userChoice == RpsMode.Scissors ||
                 aiChoice == RpsMode.Scissors && userChoice == RpsMode.Rock)
             {
-                userData.WinCounter++;
-                userData.IsWinner = true;
+                UserData.WinCounter++;
+                UserData.IsWinner = true;
             }
-
             else if (aiChoice == userChoice)
             {
-                userData.DrawCounter++;
+                UserData.DrawCounter++;
+                UserData.IsWinner = null;
             }
-            else userData.LossCounter++;
-
-            
+            else
+            {
+                UserData.LossCounter++;
+                UserData.IsWinner = false;
+            }
         }
     }
 }

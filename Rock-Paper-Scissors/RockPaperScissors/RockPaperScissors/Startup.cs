@@ -2,15 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using P2RockPaperScissors.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using RockPaperScissors.Service;
 
-namespace RockPaperScissors
+namespace P2RockPaperScissors
 {
     public class Startup
     {
@@ -26,6 +26,7 @@ namespace RockPaperScissors
         {
             services.AddSingleton<Random>();
             services.AddTransient<RpsLogic>();
+
             services.AddRazorPages();
         }
 

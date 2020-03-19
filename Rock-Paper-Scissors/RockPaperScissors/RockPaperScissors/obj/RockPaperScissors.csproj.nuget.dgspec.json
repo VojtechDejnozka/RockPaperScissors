@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vojta\\source\\repos\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj": {}
+    "C:\\Users\\vojta\\Source\\Repos\\RockPaperScissors\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vojta\\source\\repos\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj": {
+    "C:\\Users\\vojta\\Source\\Repos\\RockPaperScissors\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vojta\\source\\repos\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj",
+        "projectUniqueName": "C:\\Users\\vojta\\Source\\Repos\\RockPaperScissors\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj",
         "projectName": "RockPaperScissors",
-        "projectPath": "C:\\Users\\vojta\\source\\repos\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj",
+        "projectPath": "C:\\Users\\vojta\\Source\\Repos\\RockPaperScissors\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\RockPaperScissors.csproj",
         "packagesPath": "C:\\Users\\vojta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vojta\\source\\repos\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\obj\\",
+        "outputPath": "C:\\Users\\vojta\\Source\\Repos\\RockPaperScissors\\Rock-Paper-Scissors\\RockPaperScissors\\RockPaperScissors\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\vojta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
